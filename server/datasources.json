@@ -1,0 +1,12 @@
+{
+  "jakods": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "jakodb",
+    "password": "prader00",
+    "name": "jakods",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
