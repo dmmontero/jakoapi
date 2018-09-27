@@ -1,18 +1,18 @@
 {
-  "name": "UserLanguage",
+  "name": "UserRole",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "jakodb",
-      "table": "UserLanguage"
+      "table": "UserRole"
     },
     "relations": {
-      "fkUserlanguageLanguagerel": {
-        "model": "Language",
+      "fkUserroleRole1rel": {
+        "model": "Role",
         "type": "belongsTo",
-        "foreignKey": "languageId"
+        "foreignKey": "roleId"
       },
-      "fkUserlanguageUser1rel": {
+      "fkUserroleUser1rel": {
         "model": "User",
         "type": "belongsTo",
         "foreignKey": "userId"
@@ -20,7 +20,7 @@
     }
   },
   "properties": {
-    "languageId": {
+    "roleId": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -28,7 +28,7 @@
       "scale": 0,
       "id": 1,
       "mysql": {
-        "columnName": "Language_Id",
+        "columnName": "Role_Id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,

@@ -1,44 +1,52 @@
 {
-	"_meta": {
-		"sources": [
-			"loopback/common/models",
-			"loopback/server/models",
-			"../common/models",
-			"./models"
-		],
-		"mixins": [
-			"loopback/common/mixins",
-			"loopback/server/mixins",
-			"../common/mixins",
-			"./mixins"
-		]
-	},
-	"Historic": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"Language": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"Paymentmethod": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"Role": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"Typepayment": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"User": {
-		"dataSource": "jakods",
-		"public": true
-	},
-	"Userlanguage": {
-		"dataSource": "jakods",
-		"public": true
-	}
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Role": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "TypePayment": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "Language": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "UserLanguage": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "PaymentMethod": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "User": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "UserRole": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "Contact": {
+    "dataSource": "jakods",
+    "public": true
+  },
+  "Historic": {
+    "dataSource": "jakods",
+    "public": true
+  }
 }

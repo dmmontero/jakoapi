@@ -28,6 +28,8 @@ async function discover() {
     options
   );
   const userSchemas = await db.discoverSchemas("User", options);
+  const userRoleSchemas = await db.discoverSchemas("UserRole", options);
+  const contactSchemas = await db.discoverSchemas("Contact", options);
   const historicSchemas = await db.discoverSchemas("Historic", options);
 
   // Create model definition files
@@ -55,6 +57,14 @@ async function discover() {
   await writeFile(
     "common/models/User.json",
     JSON.stringify(userSchemas["jakodb.User"], null, 2)
+  );
+  await writeFile(
+    "common/models/UserRole.json",
+    JSON.stringify(userSchemas["jakodb.UserRole"], null, 2)
+  );
+  await writeFile(
+    "common/models/Contact.json",
+    JSON.stringify(userSchemas["jakodb.Contact"], null, 2)
   );
   await writeFile(
     "common/models/Historic.json",
@@ -86,6 +96,14 @@ async function discover() {
     public: true
   };
   config.User = {
+    dataSource: DATASOURCE_NAME,
+    public: true
+  };
+  config.UserRole = {
+    dataSource: DATASOURCE_NAME,
+    public: true
+  };
+  config.Contact = {
     dataSource: DATASOURCE_NAME,
     public: true
   };

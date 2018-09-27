@@ -1,26 +1,26 @@
 {
-  "name": "UserLanguage",
+  "name": "Contact",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "jakodb",
-      "table": "UserLanguage"
+      "table": "Contact"
     },
     "relations": {
-      "fkUserlanguageLanguagerel": {
-        "model": "Language",
-        "type": "belongsTo",
-        "foreignKey": "languageId"
-      },
-      "fkUserlanguageUser1rel": {
+      "fkContactUser1rel": {
         "model": "User",
         "type": "belongsTo",
         "foreignKey": "userId"
+      },
+      "fkContactUser2rel": {
+        "model": "User",
+        "type": "belongsTo",
+        "foreignKey": "contactId"
       }
     }
   },
   "properties": {
-    "languageId": {
+    "userId": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -28,7 +28,7 @@
       "scale": 0,
       "id": 1,
       "mysql": {
-        "columnName": "Language_Id",
+        "columnName": "User_Id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
@@ -36,7 +36,7 @@
         "nullable": "N"
       }
     },
-    "userId": {
+    "contactId": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -44,7 +44,7 @@
       "scale": 0,
       "id": 2,
       "mysql": {
-        "columnName": "User_Id",
+        "columnName": "Contact_Id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,

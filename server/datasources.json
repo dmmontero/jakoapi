@@ -4,7 +4,7 @@
     "port": 3306,
     "url": "",
     "database": "jakodb",
-    "password": "Cali2017*",
+    "password": "prader00",
     "name": "jakods",
     "user": "root",
     "connector": "mysql"
